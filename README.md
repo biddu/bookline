@@ -13,8 +13,8 @@ because a single run is an anecdote.
 
 ## How to read it
 
-Each directory is one exhibit set, named for its chapter, and holds the same
-things:
+Each top-level directory is one exhibit set, named for its chapter, and the book
+prints these paths exactly as they appear here. Every set holds the same things:
 
 | | |
 |---|---|
@@ -62,6 +62,25 @@ rather than the repository, so the version you used stays fixed.
 
 ## Licence
 
-<!-- Choose before publishing. CC BY 4.0 for the artefacts and prompts is the
-     usual choice for a book companion; it lets people teach from them with
-     attribution. Add a LICENCE file at the root. -->
+Three kinds of material, three statuses. See `LICENSE` for the full text.
+
+| | |
+|---|---|
+| **What I wrote** — prompts, results, verdicts, records, READMEs, and the arrangement of the collection | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| **Code I wrote** — everything under `drafted/`, the hand-built diagnostics, the core under test, the test harness | MIT |
+| **Everything under `generated/`** | No copyright asserted. See below. |
+
+The generated responses are not licensed here because I do not believe they are
+mine to license. The US Copyright Office's position is that copyright requires
+human authorship and that writing a prompt is not by itself authorship. On that
+reading these files have no copyright owner. The law is unsettled and varies by
+jurisdiction, so take that as an honest reading rather than legal advice.
+
+Please cite the archived snapshot rather than this repository, so the version you
+used stays fixed. That is a request grounded in research practice, not a licence
+condition.
+
+Suggested attribution:
+
+> Avishek Nag, "Bookline exhibits", companion repository to *Software Engineering
+> Thinking* (2026), https://github.com/biddu/bookline, licensed CC BY 4.0.

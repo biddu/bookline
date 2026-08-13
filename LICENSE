@@ -1,0 +1,98 @@
+Bookline exhibits — licence
+===========================
+
+This repository accompanies the book *Software Engineering Thinking: Judgment,
+Review, and Craft When AI Writes the Code* by Avishek Nag.
+
+It contains three kinds of material with three different statuses. They are
+separated deliberately, because a single blanket licence over all of it would
+claim rights in work that is not mine to license.
+
+
+1. WRITTEN MATERIAL — Creative Commons Attribution 4.0 International
+--------------------------------------------------------------------
+
+Covers everything I wrote: the prompts (PROMPT.md), the results and verdicts
+(RESULTS.md, VERDICT.md), the diagnostic and seed records (DIAGNOSTIC_RECORD.md,
+SEED_RECORD.md), every README, and the selection and arrangement of this
+repository as a whole.
+
+    Copyright (c) 2026 Avishek Nag
+
+    This material is licensed under the Creative Commons Attribution 4.0
+    International Licence. To view a copy of this licence, visit
+    https://creativecommons.org/licenses/by/4.0/
+
+You may share and adapt it, including commercially, provided you give
+appropriate credit, link to the licence, and indicate if changes were made.
+
+Suggested attribution:
+
+    Avishek Nag, "Bookline exhibits", companion repository to *Software
+    Engineering Thinking* (2026), https://github.com/biddu/bookline,
+    licensed CC BY 4.0.
+
+
+2. CODE I WROTE — MIT Licence
+------------------------------
+
+Covers the hand-written source I authored: everything under drafted/, the
+diagnostic artefacts I constructed by hand, the core under test, and the test
+harness scripts.
+
+Creative Commons recommends against using CC licences for software, because they
+say nothing about source distribution or patents and are incompatible with the
+common software licences. So the code carries MIT instead.
+
+    MIT License
+
+    Copyright (c) 2026 Avishek Nag
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+
+
+3. THE GENERATED ARTEFACTS — no copyright asserted
+---------------------------------------------------
+
+Covers everything under generated/: the unedited responses returned by the
+assistants named in each PROMPT.md.
+
+I make no claim of copyright in this material and I am not licensing it, because
+I do not believe it is mine to license. The position of the United States
+Copyright Office is that copyright requires human authorship, and that writing a
+prompt is not by itself authorship: it is closer to instructing a commissioned
+artist than to creating the work. On that view these files have no copyright
+owner. The law is unsettled and differs between jurisdictions, so treat this as
+my honest reading rather than a legal opinion.
+
+What I do assert, as the compiler of the collection, is the selection and
+arrangement, which is covered by section 1 above.
+
+If you use these artefacts in teaching, research or writing, cite the archived
+snapshot rather than this repository, so that the version you used stays fixed.
+That is a request grounded in research practice, not a licence condition.
+
+
+Why this is separated at all
+-----------------------------
+
+This is a book about being careful with generated code. Claiming a licence over
+artefacts I did not author, in the repository that exists to prove the book's
+claims, would be the same failure the book spends four hundred pages describing:
+shipping something that looks correct without checking whether it is.
