@@ -1,0 +1,1 @@
+This is the DRAFTED placeholder code from the manuscript first draft. It shows the intended defects but is not evidence. It is replaced in the book by the verbatim contents of generated/ once the prompt has been run and the provenance recorded.
