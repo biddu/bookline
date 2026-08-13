@@ -1,0 +1,150 @@
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/root/.ccr/java-truststore.p12 -Djavax.net.ssl.trustStorePassword=changeit -Djavax.net.ssl.trustStoreType=PKCS12 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=42391 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|anthropic.com|*.anthropic.com|*.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< ie.ardaralibraries:bookline-ch07 >------------------
+[INFO] Building bookline-ch07 0.1
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ bookline-ch07 ---
+[INFO] skip non existing resourceDirectory /home/claude/book/exhibit_runs/ch07-core/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ bookline-ch07 ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 2 source files with javac [debug target 21] to target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ bookline-ch07 ---
+[INFO] skip non existing resourceDirectory /home/claude/book/exhibit_runs/ch07-core/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ bookline-ch07 ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 4 source files with javac [debug target 21] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ bookline-ch07 ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/root/.ccr/java-truststore.p12 -Djavax.net.ssl.trustStorePassword=changeit -Djavax.net.ssl.trustStoreType=PKCS12 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=42391 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|anthropic.com|*.anthropic.com|*.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+[INFO] Running ie.ardaralibraries.bookline.circulation.HoldQueueServiceTest
+WARNING: A Java agent has been loaded dynamically (/root/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.12/byte-buddy-agent-1.14.12.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.404 s -- in ie.ardaralibraries.bookline.circulation.HoldQueueServiceTest
+[INFO] Running ie.ardaralibraries.bookline.circulation.CirculationServiceTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.286 s -- in ie.ardaralibraries.bookline.circulation.CirculationServiceTest
+[INFO] Running ie.ardaralibraries.bookline.billing.FineAccrualServiceTest
+[ERROR] Tests run: 10, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.170 s <<< FAILURE! -- in ie.ardaralibraries.bookline.billing.FineAccrualServiceTest
+[ERROR] ie.ardaralibraries.bookline.billing.FineAccrualServiceTest.countsPreviouslyPersistedAccrualsTowardTheCap -- Time elapsed: 0.118 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <1> but was: <6>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at ie.ardaralibraries.bookline.billing.FineAccrualServiceTest.countsPreviouslyPersistedAccrualsTowardTheCap(FineAccrualServiceTest.java:146)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] ie.ardaralibraries.bookline.billing.FineAccrualServiceTest.clampsFinalIncrementToReplacementCostAndStops -- Time elapsed: 0.008 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <2> but was: <6>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at ie.ardaralibraries.bookline.billing.FineAccrualServiceTest.clampsFinalIncrementToReplacementCostAndStops(FineAccrualServiceTest.java:123)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] ie.ardaralibraries.bookline.billing.FineAccrualServiceTest.capAlreadyReached_writesNothing -- Time elapsed: 0.004 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
+	at ie.ardaralibraries.bookline.billing.FineAccrualServiceTest.capAlreadyReached_writesNothing(FineAccrualServiceTest.java:161)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[INFO] Running ie.ardaralibraries.bookline.billing.FineCalculatorTest
+[ERROR] Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.011 s <<< FAILURE! -- in ie.ardaralibraries.bookline.billing.FineCalculatorTest
+[ERROR] ie.ardaralibraries.bookline.billing.FineCalculatorTest.zeroWhenAccruedExceedsReplacementCost -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <0> but was: <-1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at ie.ardaralibraries.bookline.billing.FineCalculatorTest.zeroWhenAccruedExceedsReplacementCost(FineCalculatorTest.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] ie.ardaralibraries.bookline.billing.FineCalculatorTest.incrementClampedToRemainingHeadroom -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <0> but was: <-1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at ie.ardaralibraries.bookline.billing.FineCalculatorTest.incrementClampedToRemainingHeadroom(FineCalculatorTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] ie.ardaralibraries.bookline.billing.FineCalculatorTest.zeroWhenAccruedEqualsReplacementCost -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <0> but was: <-1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at ie.ardaralibraries.bookline.billing.FineCalculatorTest.zeroWhenAccruedEqualsReplacementCost(FineCalculatorTest.java:45)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   FineAccrualServiceTest.capAlreadyReached_writesNothing:161 expected: <true> but was: <false>
+[ERROR]   FineAccrualServiceTest.clampsFinalIncrementToReplacementCostAndStops:123 expected: <2> but was: <6>
+[ERROR]   FineAccrualServiceTest.countsPreviouslyPersistedAccrualsTowardTheCap:146 expected: <1> but was: <6>
+[ERROR]   FineCalculatorTest.incrementClampedToRemainingHeadroom:31 expected: <0> but was: <-1>
+[ERROR]   FineCalculatorTest.zeroWhenAccruedEqualsReplacementCost:45 expected: <0> but was: <-1>
+[ERROR]   FineCalculatorTest.zeroWhenAccruedExceedsReplacementCost:52 expected: <0> but was: <-1>
+[INFO] 
+[ERROR] Tests run: 34, Failures: 6, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.295 s
+[INFO] Finished at: 2026-08-09T09:57:27Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.2.5:test (default-test) on project bookline-ch07: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/claude/book/exhibit_runs/ch07-core/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

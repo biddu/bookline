@@ -1,0 +1,37 @@
+
+===== MUTATION A =====
+executions=72  failures=3  errors=0  killed=3  survived=69
+   [failure] CirculationServiceTest$Checkout.throwsWhenCopyNotAvailable(CopyStatus)[1]
+   [failure] CirculationServiceTest$Checkout.throwsWhenCopyNotAvailable(CopyStatus)[2]
+   [failure] CirculationServiceTest$Checkout.throwsWhenCopyNotAvailable(CopyStatus)[3]
+
+===== MUTATION B =====
+executions=72  failures=2  errors=12  killed=14  survived=58
+   [error  ] FineAccrualServiceTest.doesNotChargeForTheDueDate
+   [error  ] FineAccrualServiceTest.doesNotChargeForToday
+   [error  ] FineAccrualServiceTest.passesGrowingRunningTotalToCalculator
+   [error  ] FineAccrualServiceTest.readsExistingFinesOnce
+   [error  ] FineAccrualServiceTest.resolvesTodayInLibraryTimeZone
+   [error  ] FineAccrualServiceTest.returnsPersistedInstances
+   [error  ] FineAccrualServiceTest.seedsRunningTotalFromExistingAccruals
+   [failure] FineAccrualServiceTest.skipsClosedDays
+   [error  ] FineAccrualServiceTest.skipsDaysAlreadyAccrued
+   [failure] FineAccrualServiceTest.stopsAtTheReplacementCostCap
+   [error  ] FineAccrualServiceTest.usesReturnDateAsEndOfWindow
+   [error  ] FineAccrualServiceTest.writesNothingWhenAlreadyAtCap
+   [error  ] FineAccrualServiceTest.writesNothingWhenLibraryClosedThroughout
+   [error  ] FineAccrualServiceTest.writesOneAccrualPerDayBetweenDueDateAndToday
+
+===== MUTATION C =====
+executions=72  failures=11  errors=0  killed=11  survived=61
+   [failure] FineAccrualServiceTest.stopsAtTheReplacementCostCap
+   [failure] FineAccrualServiceTest.writesNothingWhenAlreadyAtCap
+   [failure] FineCalculatorTest.clampsFinalIncrementToRemainingHeadroom
+   [failure] FineCalculatorTest.dailyIncrementTable(String, String, String, String)[2]
+   [failure] FineCalculatorTest.dailyIncrementTable(String, String, String, String)[3]
+   [failure] FineCalculatorTest.dailyIncrementTable(String, String, String, String)[5]
+   [failure] FineCalculatorTest.dailyIncrementTable(String, String, String, String)[6]
+   [failure] FineCalculatorTest.preservesScaleOfTheReturnedOperand
+   [failure] FineCalculatorTest.returnsZeroWhenAccruedEqualsCap
+   [failure] FineCalculatorTest.returnsZeroWhenAccruedExceedsCap
+   [failure] FineCalculatorTest.returnsZeroWhenCapIsZero

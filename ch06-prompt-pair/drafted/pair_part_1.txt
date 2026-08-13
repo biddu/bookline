@@ -1,0 +1,4 @@
+PROMPT A (pattern requested):
+
+Implement fine calculation for the library system using the Strategy
+pattern.

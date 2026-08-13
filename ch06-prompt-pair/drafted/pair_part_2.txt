@@ -1,0 +1,14 @@
+PROMPT B (problem described):
+
+Bookline assesses overdue fines nightly. The per-day amount varies by
+membership tier and only by tier: adult 30c per overdue day; student 15c
+per overdue day after a 2-day grace period; concession members pay nothing.
+The council adjusts these schemes yearly, so tier rules must be
+addable without touching shared accrual code. Shared rules, identical for
+all tiers: one accrual per loan per day, keyed on (loan_id, accrual_date);
+no accrual on branch closure days per the LibraryCalendar; total fines
+never exceed the item's replacement cost, enforced when the accrual is
+written. Put only the per-day amount behind an interface, one
+implementation per tier, resolved from the member's LoanPolicy. Constructor
+injection throughout. No singletons, no factories, no configuration
+options I have not asked for.

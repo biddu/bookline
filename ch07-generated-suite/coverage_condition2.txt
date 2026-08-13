@@ -1,0 +1,3 @@
+with_assertions: lines 126/130 = 96.9%, branches 22/22 = 100%
+no_assertions:   lines 126/130 = 96.9%, branches 22/22 = 100%
+130 verification statements removed (83 sunk, 37 verify deleted, 10 assertThrows unwrapped)
